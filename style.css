@@ -1,0 +1,264 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-color: #f0f0f0;  
+  text-align: center;
+  font-family: Monaco, Helvetica;
+  font-size: 18px;
+}
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+img {
+  user-drag: none;  
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+}
+.welcome {
+  padding: 2%;
+  box-shadow: 5px 10px 5px #3c3c3c;
+  background-color: rgba(240,240,240,0.95);
+  border: 4px solid #ff8b1f;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.winner {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  padding: 3%;
+}
+
+.winner2 {
+  font-family: 'Bungee Spice', cursive;
+  font-size: 34px;
+  white-space: nowrap;
+  padding: 3%;
+}
+
+.begin {
+  border-radius: 5px;
+  border: 2px solid #ff8b1f;
+  background: none;
+  cursor: pointer;
+  font-family: 'Bungee Spice', cursive;
+  font-size: 34px;
+}
+
+.begin:hover {
+  transform: scale(1.05);
+  outline-width: 2px;
+}
+
+.begin:active {
+  transform: translate(2px);
+}
+
+.header {
+  font-family: 'Bungee Spice', cursive;
+  overflow: hidden;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0px;
+  padding: 20px 0px;
+  text-shadow: 2px 2px 2px #bebebe;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+hr.rounded {
+  border: 0px;
+  height: 4px;
+  width: 30%;
+  background-image: linear-gradient(0deg, #e06200, #ffbb00);
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {  
+  font-size: 0.88rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.variant {
+  letter-spacing: 0.06em;
+}
+
+/* .playAgain {
+  background-color: #ffcaad;
+} */
+
+button {
+  border: none;
+  cursor: pointer
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+.buttonliz {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ultra:hover {
+  color: #e06200;
+}
+
+.sneak:hover {
+  color: #ffbb00;
+}
+
+.dom:hover {
+  color: #0091ff;
+}
+
+.buttonimg {
+  width: 6rem;
+  border-radius: 15%;
+  box-shadow: 5px 10px 5px #bebebe;
+  outline: solid 0px #ffffff;
+  transition: outline 0.05s;
+}
+
+.buttonimg:hover {
+  transform: scale(1.05);
+  outline-width: 2px;
+}
+
+.buttonimg:active {
+  transform:translate(2px)
+}
+
+.VS {
+  padding: 30px;
+  text-shadow: 2px 2px 2px #bebebe;
+  font-size: 42px;
+  font-family: 'Bungee Spice', cursive;
+  color: #ff8b1f;
+}
+
+.result {
+  padding: 30px;
+  text-shadow: 2px 2px 2px #bebebe;
+  font-size: 42px;
+  font-family: 'Bungee Spice', cursive;
+  color: #ff8b1f;
+}
+
+.names {
+  text-shadow: 2px 2px 2px #bebebe;
+  justify-content: center;
+  padding-bottom: 6px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.scoreTitle, .scoreNumbers{ 
+  text-shadow: 2px 2px 2px #bebebe;
+  font-size: 42px;
+  font-family: 'Bungee Spice', cursive;
+  color: #ff8b1f;
+}
+
+.score {
+  width:100%;
+  position:absolute;
+  bottom: 5px;
+  left:50%;
+  margin-left:-50%;
+}
+
+.enemy {
+  pointer-events: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.helpButton {
+  box-shadow: 2px 2px 2px #bebebe;
+  border: 2px solid #ff8b1f;
+  width: 55px;
+  height: 55px;
+  border-radius: 15%;
+  position: absolute;
+  right: 4%;
+  top: 1.4rem;
+  font-family: 'Bungee Spice', cursive;
+  font-size: 36px;
+}
+
+.helpButton:hover::before {
+  content: "Game Rules";
+  text-shadow: 2px 2px 2px #bebebe;
+  position: absolute;
+  font-size: 21px;
+  right: 70px;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.helpButton:active {
+  transform:translateY(2px)
+}
+
+.modalbg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.modalbg2{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.modal{
+  padding: 2%;
+  box-shadow: 5px 10px 5px #3c3c3c;
+  background-color: rgba(240,240,240,0.95);
+  border: 4px solid #ff8b1f;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.close2 {
+  display: none;
+}

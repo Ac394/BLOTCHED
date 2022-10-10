@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<script src="script.js" defer></script>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BLOTCHED! - A rock paper scissors variant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/icon_lizard.png"/>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<div id='close2' class='close2'>
+  <div class='modalbg2'></div>
+  <div id="Mymodal" class="modal">
+    <div class="modal-content">
+      <p class='winner2' id='winner2'></p>
+      <button class='playAgain begin' id='playAgain' onclick=playAgain()>Retry</button>
+    </div>
+  </div>
+</div>
+  
+<div id='close'>
+    <div class='modalbg'></div>
+    <div id="welcome" class="welcome prevent-select">
+       <p class='winner'>BLOTCHED! is inspired by the different strategies the side-blotched lizards utilize for acquiring mates following a pattern of rock paper scissors.<br>
+  
+  
+  <br>Male side-blotched lizards can be divided into three different categories. <br>
+  
+  <br>Orange-throated males are "ultradominant." They are the largest and most aggressive morph, keeping harems of females with which they mate. They are adept at stealing mates from blue-throated individuals, but are vulnerable to cuckoldry by the yellow-throated female mimics.<br>
+  
+  <br>Blue-throated males are "dominant". As they only have one mate to defend, they are better at catching yellow-throated sneaks, but are also susceptible to having their mates stolen by the larger, more aggressive orange-throated males.<br>
+  
+  <br>Yellow-throated males are “sneakers”. They rely on their mimicry to sneak matings with unattended females. This is more easily achieved among the harems kept by orange-throated males than by the single, closely guarded mate of the blue-throated males.<br>
+  
+  <br>You can learn more <a href="https://en.wikipedia.org/wiki/Common_side-blotched_lizard#Mating" target="_blank"> here</a> and <a href='https://www.youtube.com/watch?v=rafdHxBwIbQ&ab' target="_blank">here</a>.<br>
+  
+  <br>TLDR: Orange beats Blue - Blue beats Yellow - Yellow beats Orange
+  
+  </p>    
+      <button class='begin' id='begin' onclick="document.getElementById('close').style.display='none'">START</button>
+  </div>
+</div>
+  
+<button class='helpButton' onclick="document.getElementById('close').style.display='block'">?</button>
+  
+<header class="header">
+  <h1 class='prevent-select'>BLOTCHED!</h1>
+  <p class='prevent-select variant'>A rock paper scissors variant</p>
+</header>
+
+<hr class="rounded">
+  
+<div class='buttonContainer'>
+  <button class='buttonliz ultra' id='ultra' type='button'>
+    <span class='names prevent-select'>ULTRADOMINANT</span>
+    <img class='buttonimg orange' src = 'img/ORANGE.jpg'>
+  </button>
+      
+  <button class='buttonliz sneak' id='sneak'type='button'>
+    <span class='names prevent-select'>SNEAKER</span>
+    <img class='buttonimg yellow' src = 'img/YELLOW.jpg'>
+  </button>  
+      
+  <button class='buttonliz dom' id='dom' type='button'>
+    <span class='names prevent-select'>DOMINANT</span>
+    <img class='buttonimg blue' src = 'img/BLUE.jpg'>
+  </button>
+
+</div>
+
+<p class='VS prevent-select'>VS</p>
+  
+<button class='enemy prevent-select' type='button'>
+  <img class='buttonimg random' id='enemy' src = 'img/enemy.jpg'>
+</button>
+
+<p class='result prevent-select' id='result'></p>
+<div class='score prevent-select'>
+<p class='scoreTitle'>SCORE</p>
+<p class='scoreNumbers' id='score'>00:00</p>
+</div>
+
+</body>
+
+</html>
